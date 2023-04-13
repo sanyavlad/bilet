@@ -1,0 +1,37 @@
+.container{
+    margin: 0 auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+header{
+    height: 75px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(53, 211, 216), rgb(25, 206, 85));
+}
+header section{
+    height: 75px;
+    /* border: 1px solid black; */
+}
+header .logo{
+    margin-left: 0;
+    width: 100px;
+    /* border: 1px solid aliceblue ; */
+    /* height: 100vh; */
+    
+}
+header .right{
+    /* justify-content: right; */
+    color: white;
+    margin: auto 0 ;
+}
+header .left .location{
+    color: white;
+}
+header .left .location i{
+    margin-right: 5px;
+}
+.stick{
+    margin: 0 5px;
+    height: 10px;
+    border: 0.5px solid white;
+}

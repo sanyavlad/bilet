@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ca1f7963f7.js" crossorigin="anonymous"></script>
+  <script async src="../js/worker.js"></script>
+  <link rel="stylesheet" href="employ.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <section class="d-flex justify-content-between">
+        <div class="left">
+          <span class="logo"><img src="../img/logo1.png" width="150px" height="75px" alt=""></span>
+          <ul class="location"><span><i class="fa-solid fa-location-dot"></i>Брянск</span>
+            li</ul>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+          <a href="../index.html" class="applicants">Соискателям</a>
+          <span class="stick"></span>
+          <a href="#" class="employers">Работодателям</a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+
+
+  <section class="vacancies">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <div class="authorization">
+          <a href="" data-bs-toggle='modal' data-bs-target='#ModalsignUp' class="s-work">Зарегистрироваться</a>
+          <a href="" data-bs-toggle='modal' data-bs-target='#ModalsignIn' class="summary">Войти</a>
+        </div>
+        <!-- Modal войти -->
+        <div id="ModalsignIn" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 data-bs-dismiss='modal'>Вход в аккаунт соискателя</h3>
+                <button class="btn-close" data-bs-dismiss='modal'></button>
+              </div>
+              <div class="modal-body">
+                <input type="email" placeholder="введите свой email">
+                <input type="password" placeholder="введите свой пароль">
+                <label class="auth-error"></label>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss='modal'>Закрыть окно</button>
+                <button type="button" id="login" class="btn btn-default">Войти</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Modal войти -->
+        <!-- Modal зарегаться -->
+        <div id="ModalsignUp" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 data-bs-dismiss='modal'>Зарегистрироваться в роли соискателя</h3>
+                <button class="btn-close" data-bs-dismiss='modal'></button>
+              </div>
+              <div class="modal-body">
+                <lable>Чтобы зарегистрироваться, введите свои данные:</lable>
+
+                <input type="email" placeholder="введите свой email">
+                <label class="email-error"></label>
+                <input type="password" placeholder="введите свой пароль">
+                <label class="password-error"></label>
+                <input type="password" placeholder="подтвердите свой пароль">
+                <label class="repeat-password"></label>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss='modal'>Закрыть окно</button>
+                <button type="button" class="btn btn-primary" id="logup">Зарегистрироваться</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Modal зарегаться -->
+      </div>
+      <div class="info d-flex justify-content-center">
+        <div class="">
+          <h2>Лёгкий поиск соискателей</h2>
+          <p>Все нужные инструменты для качественного найма</p>
+          <!-- <div class="btn"> -->
+          <a href="#" class="btn btn-info" role="button">Разместить вакансию</a>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="feedback">
+    <div class="container">
+      <h1>Обратная связь</h1>
+      <form>
+        <table>
+          <tr>
+            <td><label>Ваша почта:</label></td>
+            <td><Input type="text" name="name" placeholder="Введите ваш email"></Input></td>
+          </tr>
+          <tr>
+            <td>Ваш вопрос:</td>
+            <td>
+              <textarea name="comment" placeholder="Сообщите всё, что считаете нужным" cols="0" rows="4"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Отправить" class="enter"></td>
+          </tr>
+        </table>
+      </form>
+      <div class="manual">
+        <h3>Появился вопрос по нашему сайту?</h3>
+        <p>Заполните короткую форму обратной связи и отправьте нам.</p>
+        <p>Задайте ваш вопрос в форме или свяжитесь с нами по номеру: <b>+79393840849</b> или напишите на почту: <b>sanyaaa7982@gmail.com</b></p>
+        <p><b>Внимание!</b>Все поля обязательны для заполнения.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="info">
+    <div class="container">
+      <div class="lists">
+        <ul>
+          <li>О компании</li>
+          <li>Наши вакансии</li>
+          <li>Партнерам</li>
+          <li>Реклама на сайте</li>
+          <li>Новости и статьи</li>
+          <li>Инвесторам</li>
+          <li>Условия оказания услуг</li>
+          <li>Условия использования сайтов</li>
+        </ul>
+        <ul>
+          <li>Производственный календарь</li>
+          <li>Требования к ПО</li>
+          <li>Защита персональных данных</li>
+          <li>Безопасный HeadHunter</li>
+          <li>Этика и комплаенс</li>
+          <li>HeadHunter API</li>
+        </ul>
+        <ul>
+          <li>Кандидаты<br>по профессиям</li>
+          <li>Поиск работы</li>
+        </ul>
+        <img src="https://cdn.discordapp.com/attachments/1094960684749553667/1095048279483498537/logo1.png" alt="">
+      </div>
+
+      <div class='icons'>
+        <a href="https://vk.com/itpark32"><i class="fa-brands fa-vk"></i></a>
+        <a href="#"><i class="fa-brands fa-square-odnoklassniki"></i></a>
+        <a href="https://t.me/mar_lik"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+      <hr>
+      <p>© 2023 Группа компаний Рашит Дмитрий Александр Максим</p>
+
+    </div>
+  </section>
+  <script src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js">
+  </script>
+</body>
+
+</html>
